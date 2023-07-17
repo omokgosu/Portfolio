@@ -1,6 +1,5 @@
 import React from 'react';
 
-import SkipNav from '..//components/SkipNav';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import About from '../components/About';
@@ -11,19 +10,16 @@ import Career from '../components/Career';
 
 export default function Page() {
   return (
-    <>
-    <SkipNav />
-        <div className="wrap">
-            <Header />
-            <div className="container">
-                <Main />
-                <About />
-                <Skill />
-                <Archiving />
-                <Project />
-                <Career />
-            </div>
-        </div>
-    </>
+      <div className="wrap">
+          <Header />
+          <div className="container">
+              <Main />
+              <About />
+              <Skill />
+              <Archiving />
+              <Project />
+              <Career />
+          </div>
+      </div>
   );
 }
