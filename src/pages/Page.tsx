@@ -12,14 +12,15 @@ export default function Page() {
   return (
       <div className="wrap">
           <Header />
-          <div className="container">
-              <Main />
-              <About />
-              <Skill />
-              <Archiving />
-              <Project />
-              <Career />
-          </div>
+          <article className="container">
+            <h2 className="hidden">본문 콘텐츠 영역</h2>
+            <Main />
+            <About />
+            <Skill />
+            <Archiving />
+            <Project />
+            <Career />
+          </article>
       </div>
   );
 }

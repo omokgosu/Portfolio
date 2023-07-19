@@ -1,0 +1,29 @@
+.About{
+    display: flex;
+    justify-content: space-between;
+}
+.About > img{
+    width: 35%;
+}
+.AboutInfo{
+    width: 60%;
+}
+.AboutInfo ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75em;
+}
+.AboutInfo li{
+    display: flex;
+    gap: 1em;
+}
+.AboutInfo li dt{
+    font-size: 1.18rem;
+    font-weight: 700;
+}
+.AboutInfo li dd{
+    color: #666;
+}
+.AboutInfo li dd a{
+    color: #666;
+}

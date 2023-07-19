@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="Header">
       <div className="headerInner">
-        <h1><a href="./index.html">양진성 포트폴리오 로고</a></h1>
+        <h1><a href="./index.html">양진성 포트폴리오</a></h1>
         <nav>
           <h2 className="hidden">네비게이션 영역</h2>
           <ul className="QuickList">
