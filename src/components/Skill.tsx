@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../styles/Skill.css';
+
 interface Skill {
   title: string;
   kind: string[]
@@ -41,10 +43,28 @@ export default function Skill() {
   return (
     <section className="Skill">
       <h3>SKILLS</h3>
-      <ul>
-        <li>
-          
-        </li>
+      <ul className="SkillList">
+          {
+            Data &&
+            Data.map(el => {
+              return(
+              <li key={el.title}>
+                <h4>{el.title}</h4>
+                <ul className="SkillContent">
+                  {
+                    el.kind &&
+                    el.kind.map(e =>{
+                      return <li key={e}>
+                                <img src={`/assets/icons/skill/${el.title}/${e}.svg`} alt={e}/>
+                                <span>{e}</span>
+                              </li>
+                    })
+                  }
+                </ul>
+              </li>
+              )
+            })
+          }
       </ul>
     </section>
   );

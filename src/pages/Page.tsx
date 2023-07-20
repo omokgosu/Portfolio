@@ -16,7 +16,6 @@ export default function Page() {
             <h2 className="hidden">본문 콘텐츠 영역</h2>
             <Main />
             <About />
-            <Skill />
             <Archiving />
             <Project />
             <Career />

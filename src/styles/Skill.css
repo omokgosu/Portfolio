@@ -1,0 +1,17 @@
+.SkillList h4{
+    font-size: 1.16em;
+    margin-bottom: 0.8em;
+}
+.SkillList > li{
+    margin-bottom: 1.5em;
+}
+.SkillContent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25em;
+}
+.SkillContent li{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
