@@ -1,7 +1,8 @@
 .About{
+    max-width: 1400px;
+    margin: 6rem auto;
     display: flex;
     justify-content: space-between;
-    margin: 6em 0;
 }
 .About > img{
     width: 35%;

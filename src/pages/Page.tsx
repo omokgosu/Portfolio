@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import About from '../components/About';
-import Skill from '../components/Skill';
+import Slide from '../components/Slide';
 import Archiving from '../components/Archiving';
 import Project from '../components/Project';
 import Career from '../components/Career';
@@ -16,6 +16,7 @@ export default function Page() {
             <h2 className="hidden">본문 콘텐츠 영역</h2>
             <Main />
             <About />
+            <Slide />
             <Archiving />
             <Project />
             <Career />

@@ -1,0 +1,28 @@
+@keyframes slide {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-3256px);
+    }
+}
+.slide{
+    margin: 100px 0;
+    overflow: hidden;
+    font-size: 0;
+}
+.slide ul{
+    white-space: nowrap;
+    will-change: transform;
+    animation: slide 20s linear infinite;
+}
+.slide ul li{
+    display: inline-block;
+}
+.slide ul li p{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #333;
+    padding: 6px 40px;
+}
