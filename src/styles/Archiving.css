@@ -1,0 +1,51 @@
+.Archiving{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.ArchivingList{
+    display: flex;
+    gap: 20px;
+}
+.ArchivingList > li{
+    position: relative;
+    top: 0;
+    flex: 1;
+    border: solid 2px #666;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .3s;
+}
+.ArchivingList > li:hover{
+    top: -10px;
+}
+.ArchivingList > li > a{
+    padding: 20px;
+}
+.ArchivingList > li h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.ArchivingList > li h4 img{
+    width: 25px;
+}
+.ArchivingList ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ArchivingList ul li p span{
+    position: relative;
+}
+.ArchivingList ul li p span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-200%, 8px);
+    width: 14px;
+    height: 10px;
+    background: url(../../public/assets/images/archiving/check.svg) no-repeat center/cover;
+}

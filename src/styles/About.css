@@ -27,6 +27,9 @@
     display: flex;
     gap: 1em;
 }
+.Information li img{
+    width: 24px;
+}
 .Information li dt{
     font-size: 1.18rem;
     font-weight: 700;

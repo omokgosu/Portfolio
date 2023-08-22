@@ -19,7 +19,7 @@
     width: 77px;
     height: 60px;
     text-indent: -9999px;
-    background: url(../../public/assets/images/logo.png) no-repeat center/cover;
+    background: url(../../public/assets/images/header/logo.png) no-repeat center/cover;
 }
 .QuickList{
     display: flex;
@@ -28,5 +28,5 @@
     font-weight: 700;
 }
 .QuickList li:hover{
-    color: blueviolet;
+    color: var(--color_violet);
 }

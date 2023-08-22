@@ -31,6 +31,6 @@
     bottom: 3em;
     right: 0;
     left: 0;
-    background: url(../../public/assets/images/main_back.png);  
+    background: url(../../public/assets/images/main/main_back.png);  
     z-index: -1;
 }

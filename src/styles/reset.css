@@ -18,7 +18,7 @@ body{font-family:'Noto Sans KR', sans-serif; font-size: 18px;color: #333}
 ol, ul{list-style: none;}
 table{border-collapse: collapse; border-spacing: 0;}
 address{font-style: normal}
-a{color: #333; text-decoration: none}
+a{color: #333; text-decoration: none; display: block;}
 img{border: 0; vertical-align: top}
 /* 폰트
 font-family: 'Noto Sans KR', sans-serif;
@@ -26,6 +26,13 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Fredericka the Great', cursive;
 
  */
+ :root{
+	--font_weight_bold: 700;
+	--font_weight_medium: 500;
+	--font_weight_normal: 400;
+
+	--color_violet: blueviolet;
+ }
  html{
     font-size: 18px;
  }
