@@ -10,7 +10,7 @@ export default function Archiving() {
         <li>
           <a href="https://github.com/omokgosu" target='_blank' rel="noreferrer">
             <h4>
-              <img src="/assets/icons/skill/version/github.svg" alt="git_hub" />
+              <img src={process.env.PUBLIC_URL+"/assets/icons/skill/version/github.svg"} alt="git_hub" />
               <span>깃 허브</span>
             </h4>
             <ul>
@@ -23,7 +23,7 @@ export default function Archiving() {
         <li>
           <a href="https://blog.naver.com/anfakt0606" target='_blank' rel="noreferrer">
             <h4>
-              <img src="/assets/icons/skill/version/Naver.svg" alt="naver_blog" />
+              <img src={process.env.PUBLIC_URL+"/assets/icons/skill/version/Naver.svg"} alt="naver_blog" />
               <span>네이버 블로그</span>
             </h4>
             <ul>

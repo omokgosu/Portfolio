@@ -55,7 +55,7 @@ export default function Skill() {
                     el.kind &&
                     el.kind.map(e =>{
                       return <li key={e}>
-                                <img src={`/assets/icons/skill/${el.title}/${e}.svg`} alt={e}/>
+                                <img src={process.env.PUBLIC_URL+`/assets/icons/skill/${el.title}/${e}.svg`} alt={e}/>
                                 <span>{e}</span>
                               </li>
                     })

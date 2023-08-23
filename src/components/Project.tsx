@@ -12,7 +12,7 @@ export default function Project() {
           <span>2023.08 &#40; 사이드 프로젝트 &#41;</span>
           <div className="ProjectItem">
             <div className="ProjectImg">
-              <img src="/assets/images/project/SRC_1.png" alt="SRC이미지" />
+              <img src={process.env.PUBLIC_URL+"/assets/images/project/SRC_1.png"} alt="SRC이미지" />
             </div>
             <div className="ProjectInfo">
               <ul className="ProjectText">
@@ -64,7 +64,7 @@ export default function Project() {
           <span>2023.08 &#40; 개인 프로젝트 &#41;</span>
           <div className="ProjectItem">
             <div className="ProjectImg">
-              <img src="/assets/images/project/SRC_1.png" alt="SRC이미지" />
+              <img src={process.env.PUBLIC_URL+"/assets/images/project/SRC_1.png"} alt="SRC이미지" />
             </div>
             <div className="ProjectInfo">
               <ul className="ProjectText">
