@@ -3,7 +3,7 @@
     left: 0;
     top:0;
     right: 0;
-    background: #fff;
+    background: var(--color_ff);
     z-index: 1000;
 }
 .headerInner{

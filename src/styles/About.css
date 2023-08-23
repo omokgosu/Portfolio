@@ -31,7 +31,7 @@
     width: 24px;
 }
 .Information li dt{
-    font-size: 1.18rem;
+    font-size: var(--font_size_medium);
     font-weight: 700;
 }
 .Information li dd{

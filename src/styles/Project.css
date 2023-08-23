@@ -1,16 +1,25 @@
 .Project{
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 100px auto;
 }
 .Project h3{
     text-align: center;
-    font-size: 36px;
+    font-size: var(--font_size_max);
 }
 .ProjectList{
-    margin-top: 30px;
+    margin-top: 100px;
 }
 .ProjectList h4{
+    font-size: var(--font_size_big);
     text-align: center;
+}
+.ProjectList > li{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px var(--color_cc);
+}
+.ProjectList > li:last-child{
+    margin-bottom: 0;
 }
 .ProjectList li > span{
     display: block;
@@ -18,8 +27,9 @@
     color: #666;
 }
 .ProjectItem{
+    margin-top: 50px;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 .ProjectImg{
     flex: 1;
@@ -29,4 +39,41 @@
 }
 .ProjectInfo{
     flex: 1;
+}
+.ProjectText li{
+    margin-bottom: 20px;
+}
+.ProjectTitle{
+    font-weight: var(--font_weight_bold);
+}
+.ProjectBold{
+    color: var(--color_red);
+}
+.ProjectSkill{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: solid 1px var(--color_cc);
+}
+.ProjectSkill li{
+    margin-bottom: 10px;
+}
+.ProjectSkill li:last-child{
+    margin-bottom: 10px;
+}
+.ProjectSkill dl{
+    display: flex;
+    gap: 30px;
+}
+.ProjectSkill dt{
+    width: 30%;
+    font-weight: var(--font_weight_bold);
+}
+.ProjectSkill dd{
+    flex: 1;
+}
+.ProjectSkill dd a{
+    color: var(--color_violet);
+}
+.ProjectSkill dd a:hover{
+    text-decoration: underline;
 }

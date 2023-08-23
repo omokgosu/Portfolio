@@ -14,7 +14,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%; box-sizing: border-box;}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section{display: block;}
-body{font-family:'Noto Sans KR', sans-serif; font-size: 18px;color: #333}
 ol, ul{list-style: none;}
 table{border-collapse: collapse; border-spacing: 0;}
 address{font-style: normal}
@@ -31,13 +30,26 @@ font-family: 'Fredericka the Great', cursive;
 	--font_weight_medium: 500;
 	--font_weight_normal: 400;
 
+	--font_size_min: 0.66em;
+	--font_size_small: 0.85em;
+	--font_size_normal: 1em;
+	--font_size_medium: 1.18em;
+	--font_size_big: 2em;
+	--font_size_max: 3em;
+
+	--color_ff: #fff;
+	--color_cc: #ccc;
+	--color_dark: #333;
 	--color_violet: blueviolet;
+	--color_red: #FF4747;
  }
  html{
     font-size: 18px;
  }
  body{
     font-family: 'Noto Sans KR', sans-serif;
+	font-size: 18px;
+	color: var(--color_dark);
  }
 .hidden{
     position: absolute;
@@ -46,4 +58,20 @@ font-family: 'Fredericka the Great', cursive;
 	height: 1px;
 	margin: -1px;
 	overflow: hidden;
+}
+button{ 
+	border: none; 
+	background: var(--color_violet); 
+	color: var(--color_ff);
+	padding: 8px 10px;
+	border-radius: 5px;
+	font-weight: var(--font_weight_bold);
+	font-size: var(--font_size_normal);
+	cursor: pointer;
+	border: solid 2px var(--color_violet);
+	transition: all .5s;
+}
+button:hover{
+	background-color: var(--color_ff);
+	color: var(--color_violet);
 }
