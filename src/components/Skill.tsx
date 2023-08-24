@@ -13,7 +13,7 @@ export default function Skill() {
     {
       title: 'Front-end',
       kind: [
-        'Reactjs',
+        'ReactJs',
         'NextJs',
         'TypeScript',
         'JavaScript',
