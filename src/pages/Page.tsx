@@ -7,6 +7,7 @@ import Slide from '../components/Slide';
 import Archiving from '../components/Archiving';
 import Project from '../components/Project';
 import Career from '../components/Career';
+import Footer from '../components/Footer';
 
 export default function Page() {
   return (
@@ -21,6 +22,7 @@ export default function Page() {
             <Project />
             <Career />
           </article>
+          <Footer />
       </div>
   );
 }
