@@ -63,7 +63,7 @@ font-family: 'Fredericka the Great', cursive;
 }
 button{ 
 	border: none; 
-	background: var(--color_violet); 
+	background-color: var(--color_violet); 
 	color: var(--color_ff);
 	padding: 8px 10px;
 	border-radius: 5px;

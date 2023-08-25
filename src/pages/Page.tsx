@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 import Header from '../components/Header';
 import Main from '../components/Main';
@@ -10,6 +10,9 @@ import Career from '../components/Career';
 import Footer from '../components/Footer';
 
 export default function Page() {
+
+  const aboutRef = useRef(null);
+
   return (
       <div className="wrap">
           <Header />
