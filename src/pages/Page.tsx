@@ -11,7 +11,23 @@ import Footer from '../components/Footer';
 
 export default function Page() {
 
-  const aboutRef = useRef(null);
+  const [ aboutH , setAboutH ] = useState<number>(0);
+  const [ archivingH , setArchivingH ] = useState<number>(0);
+  const [ projectH , setProjectH ] = useState<number>(0);
+  const [ careerH , setCareerH ] = useState<number>(0);
+
+  const aboutOffsetTop = (newOffsetTop:number):void => {
+    setAboutH(newOffsetTop);
+  }
+  const archivingOffsetTop = (newOffsetTop:number):void => {
+    setArchivingH(newOffsetTop);
+  }
+  const projectOffsetTop = (newOffsetTop:number):void => {
+    setProjectH(newOffsetTop);
+  }
+  const careerOffsetTop = (newOffsetTop:number):void => {
+    setCareerH(newOffsetTop);
+  }
 
   return (
       <div className="wrap">

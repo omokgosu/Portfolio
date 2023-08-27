@@ -3,7 +3,11 @@ import React from 'react';
 import Skill from './Skill';
 import '../styles/About.css'
 
-export default function About() {
+type aboutTop = {
+  aboutOffsetTop: (newOffsetTop:number) => void;
+}
+
+export default function About({aboutOffsetTop}) {
   
   return (
     <section className="About">
