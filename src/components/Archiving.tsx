@@ -10,8 +10,16 @@ export default function Archiving({archivingOffsetTop}:archivingTop) {
 
   const archivingRef = useRef<HTMLDivElement>(null);
   useEffect(()=>{
-    if(archivingRef.current){
-      archivingOffsetTop(archivingRef.current.offsetTop);
+    const Load = ():void => {
+      if(archivingRef.current){
+        archivingOffsetTop(archivingRef.current.offsetTop);
+      }
+    }
+
+    window.addEventListener('load', Load);
+
+    return () => {
+      window.removeEventListener('load', Load);
     }
   },[])
 

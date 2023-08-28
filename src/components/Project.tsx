@@ -10,8 +10,16 @@ export default function Project({projectOffsetTop}:projectTop) {
   const projectRef = useRef<HTMLDivElement>(null);
   
   useEffect(()=>{
-    if(projectRef.current){
-      projectOffsetTop(projectRef.current.offsetTop);
+    const Load = ():void => {
+      if(projectRef.current){
+        projectOffsetTop(projectRef.current.offsetTop);
+      }
+    }
+
+    window.addEventListener('load', Load);
+
+    return () => {
+      window.removeEventListener('load', Load);
     }
   },[])
 

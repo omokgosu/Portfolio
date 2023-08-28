@@ -11,8 +11,16 @@ export default function Career({careerOffsetTop}:careerTop) {
   const careerRef = useRef<HTMLDivElement>(null);
   
   useEffect(()=>{
-    if(careerRef.current){
-      careerOffsetTop(careerRef.current.offsetTop);
+    const Load = ():void => {
+      if(careerRef.current){
+        careerOffsetTop(careerRef.current.offsetTop);
+      }
+    }
+
+    window.addEventListener('load', Load);
+
+    return () => {
+      window.removeEventListener('load', Load);
     }
   },[])
 

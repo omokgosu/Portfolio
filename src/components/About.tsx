@@ -10,9 +10,18 @@ type aboutTop = {
 export default function About({aboutOffsetTop}:aboutTop) {
   
   const aboutRef = useRef<HTMLDivElement>(null);
+  
   useEffect(()=>{
-    if(aboutRef.current){
-      aboutOffsetTop(aboutRef.current.offsetTop);
+    const Load = ():void => {
+      if(aboutRef.current){
+        aboutOffsetTop(aboutRef.current.offsetTop);
+      }
+    }
+
+    window.addEventListener('load', Load);
+
+    return () => {
+      window.removeEventListener('load', Load);
     }
   },[])
 

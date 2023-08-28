@@ -45,8 +45,9 @@ export default function Page() {
     if(section === 'career'){
       scrollTop = careerH;
     }
-    
+
     window.innerWidth > 768 ? scrollTop -= 80 : scrollTop -= 55;
+
     window.scrollTo({
       top: scrollTop,
       behavior: 'smooth'
