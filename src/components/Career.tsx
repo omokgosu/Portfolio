@@ -1,10 +1,23 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import '../styles/Career.css'
 
-export default function Career() {
+type careerTop = {
+  careerOffsetTop: (newOffsetTop:number) => void;
+}
+
+export default function Career({careerOffsetTop}:careerTop) {
+
+  const careerRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(()=>{
+    if(careerRef.current){
+      careerOffsetTop(careerRef.current.offsetTop);
+    }
+  },[])
+
   return (
-    <section className="Career">
+    <section ref={careerRef} className="Career">
       <h3>Carrer</h3>
       <div className="CareerInner">
         <div className="CareerImg">

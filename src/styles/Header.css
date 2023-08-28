@@ -26,10 +26,15 @@
     justify-content: space-between;
     font-weight: 700;
 }
-.QuickList a{
+.QuickList button{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: var(--color_dk);
+    font-size: var(--font_size_medium);
     padding: 0 20px;
 }
-.QuickList a:hover{
+.QuickList button:hover{
     color: var(--color_violet);
 }
 .navBtn{

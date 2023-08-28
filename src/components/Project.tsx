@@ -1,10 +1,22 @@
-import React from 'react';
+import React , {useEffect, useRef}from 'react';
 import '../styles/Project.css'
 
-export default function Project() {
+type projectTop = {
+  projectOffsetTop: (newoffsetTop:number) => void;
+}
+
+export default function Project({projectOffsetTop}:projectTop) {
+
+  const projectRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(()=>{
+    if(projectRef.current){
+      projectOffsetTop(projectRef.current.offsetTop);
+    }
+  },[])
 
   return (
-    <section className="Project">
+    <section ref={projectRef} className="Project">
       <h3>PROJECT</h3>
       <ul className="ProjectList">
         <li>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect , useRef} from 'react';
 
 import Skill from './Skill';
 import '../styles/About.css'
@@ -7,10 +7,17 @@ type aboutTop = {
   aboutOffsetTop: (newOffsetTop:number) => void;
 }
 
-export default function About({aboutOffsetTop}) {
+export default function About({aboutOffsetTop}:aboutTop) {
   
+  const aboutRef = useRef<HTMLDivElement>(null);
+  useEffect(()=>{
+    if(aboutRef.current){
+      aboutOffsetTop(aboutRef.current.offsetTop);
+    }
+  },[])
+
   return (
-    <section className="About">
+    <section ref={aboutRef}className="About">
       <h2 className="hidden">About</h2>
       <img src={process.env.PUBLIC_URL+"/assets/images/about/introduce.jpg"} alt="양진성 사진" />
       <div className="AboutInfo">

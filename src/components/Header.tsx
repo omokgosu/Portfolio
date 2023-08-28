@@ -2,7 +2,11 @@ import React, {useState} from 'react';
 
 import '../styles/Header.css'
 
-export default function Header() {
+type scrollBtn = {
+  scroll: (section:string) => void;
+}
+
+export default function Header({scroll}:scrollBtn) {
 
   const [ navOpen ,setNavOpen ] = useState<boolean>(false);
 
@@ -14,16 +18,32 @@ export default function Header() {
           <h2 className="hidden">네비게이션 영역</h2>
           <ul className="QuickList">
             <li>
-              <a href="#About" >About</a>
+              <button type="button"
+                onClick={()=>scroll('about')}
+              >
+                About
+              </button>
             </li>
             <li>
-              <a href="#Archiving">Archiving</a>
+              <button type="button"
+               onClick={()=>scroll('archiving')}
+              >
+                Archiving
+              </button>
             </li>
             <li>
-              <a href="#Project">Project</a>
+              <button type="button"
+                onClick={()=>scroll('project')}
+              >
+                Project
+              </button>
             </li>
             <li>
-              <a href="#Career" >Career</a>
+              <button type="button"
+               onClick={()=>scroll('career')}
+              >
+                Career
+              </button>
             </li>
           </ul>
         </nav>

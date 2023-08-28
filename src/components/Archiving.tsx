@@ -1,10 +1,22 @@
-import React from 'react';
+import React, {useEffect,useRef} from 'react';
 
 import '../styles/Archiving.css'
 
-export default function Archiving() {
+type archivingTop = {
+  archivingOffsetTop: (newOffsetTop:number) => void; 
+}
+
+export default function Archiving({archivingOffsetTop}:archivingTop) {
+
+  const archivingRef = useRef<HTMLDivElement>(null);
+  useEffect(()=>{
+    if(archivingRef.current){
+      archivingOffsetTop(archivingRef.current.offsetTop);
+    }
+  },[])
+
   return (
-    <section className="Archiving">
+    <section ref={archivingRef} className="Archiving">
       <h3 className="hidden">Archiving</h3>
       <ul className="ArchivingList">
         <li>

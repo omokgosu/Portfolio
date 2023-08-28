@@ -29,17 +29,41 @@ export default function Page() {
     setCareerH(newOffsetTop);
   }
 
+  const scroll = (section:string):void => {
+
+    let scrollTop:number = 0;
+    
+    if(section === 'about'){
+      scrollTop = aboutH;
+    }
+    if(section === 'archiving'){
+      scrollTop = archivingH;
+    }
+    if(section === 'project'){
+      scrollTop = projectH;
+    }
+    if(section === 'career'){
+      scrollTop = careerH;
+    }
+    
+    window.innerWidth > 768 ? scrollTop -= 80 : scrollTop -= 55;
+    window.scrollTo({
+      top: scrollTop,
+      behavior: 'smooth'
+    })
+  }
+
   return (
       <div className="wrap">
-          <Header />
+          <Header scroll={scroll}/>
           <article className="container">
             <h2 className="hidden">본문 콘텐츠 영역</h2>
             <Main />
-            <About />
+            <About aboutOffsetTop={aboutOffsetTop}/>
             <Slide />
-            <Archiving />
-            <Project />
-            <Career />
+            <Archiving archivingOffsetTop={archivingOffsetTop}/>
+            <Project projectOffsetTop={projectOffsetTop}/>
+            <Career careerOffsetTop={careerOffsetTop}/>
           </article>
           <Footer />
       </div>
