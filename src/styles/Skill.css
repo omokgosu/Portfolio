@@ -5,6 +5,14 @@
 .SkillList > li{
     margin-bottom: 1.5em;
 }
+.SkillList > li:last-child{
+    margin-bottom: 0;
+}
+.SkillList h5{
+    font-size: var(--font_size_medium);
+    color: var(--color_dark);
+    margin-bottom: 0.8em;
+}
 .SkillContent{
     display: flex;
     flex-wrap: wrap;

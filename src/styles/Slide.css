@@ -26,3 +26,19 @@
     color: #333;
     padding: 6px 40px;
 }
+
+@media screen and (max-width: 1200px) {
+    .slide{
+        padding-bottom: 5rem;
+    }  
+}
+@media screen and (max-width: 768px) { 
+   .slide{
+        padding-bottom: 4rem;
+   }
+}
+@media screen and (max-width: 640px) { 
+    .slide{
+        padding-bottom: 3rem;
+    }
+}

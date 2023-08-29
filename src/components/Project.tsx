@@ -8,18 +8,19 @@ type projectTop = {
 export default function Project({projectOffsetTop}:projectTop) {
 
   const projectRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(()=>{
-    const Load = ():void => {
-      if(projectRef.current){
-        projectOffsetTop(projectRef.current.offsetTop);
-      }
+  const Load = ():void => {
+    if(projectRef.current){
+      projectOffsetTop(projectRef.current.offsetTop);
     }
+  }
 
+  useEffect(()=>{
     window.addEventListener('load', Load);
+    window.addEventListener('resize', Load);
 
     return () => {
       window.removeEventListener('load', Load);
+      window.removeEventListener('resize', Load);
     }
   },[])
 

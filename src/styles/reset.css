@@ -40,6 +40,7 @@ font-family: 'Fredericka the Great', cursive;
 	--color_ff: #fff;
 	--color_cc: #ccc;
 	--color_99: #999;
+	--color_66: #666;
 	--color_black: #000;
 	--color_dark: #333;
 	--color_violet: blueviolet;
@@ -76,4 +77,7 @@ button{
 button:hover{
 	background-color: var(--color_ff);
 	color: var(--color_violet);
+}
+button:focus{
+	outline: none;
 }

@@ -34,3 +34,25 @@
     background: url(../../public/assets/images/main/main_back.png);  
     z-index: -1;
 }
+@media screen and (max-width: 1200px) {
+    .main{
+        width: 90%;
+        height: auto;
+        padding-bottom: 6em;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main p{
+        font-size: 1.5em;
+        margin-top: .6em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main h3{
+        font-size: var(--font_size_big);
+    }
+    .main p{
+        font-size: var(--font_size_normal);
+        margin-top: .6em;
+    }
+}

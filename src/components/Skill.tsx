@@ -42,14 +42,14 @@ export default function Skill() {
 
   return (
     <section className="Skill">
-      <h3>SKILLS</h3>
+      <h4>SKILLS</h4>
       <ul className="SkillList">
           {
             Data &&
             Data.map(el => {
               return(
               <li key={el.title}>
-                <h4>{el.title}</h4>
+                <h5>{el.title}</h5>
                 <ul className="SkillContent">
                   {
                     el.kind &&

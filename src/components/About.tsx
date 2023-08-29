@@ -10,28 +10,30 @@ type aboutTop = {
 export default function About({aboutOffsetTop}:aboutTop) {
   
   const aboutRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(()=>{
-    const Load = ():void => {
-      if(aboutRef.current){
-        aboutOffsetTop(aboutRef.current.offsetTop);
-      }
+  const Load = ():void => {
+    if(aboutRef.current){
+      aboutOffsetTop(aboutRef.current.offsetTop);
     }
+  }
+
+  useEffect(()=>{
 
     window.addEventListener('load', Load);
+    window.addEventListener('resize', Load);
 
     return () => {
       window.removeEventListener('load', Load);
+      window.removeEventListener('resize', Load);
     }
-  },[])
+  },[]);
 
   return (
     <section ref={aboutRef}className="About">
-      <h2 className="hidden">About</h2>
+      <h3 className="hidden">About</h3>
       <img src={process.env.PUBLIC_URL+"/assets/images/about/introduce.jpg"} alt="양진성 사진" />
       <div className="AboutInfo">
         <section className="Information">
-          <h3>INFORMATION</h3>
+          <h4>INFORMATION</h4>
           <ul className="Information">
             <li>
               <img src={process.env.PUBLIC_URL+"/assets/icons/about/name.svg"} alt="이름 아이콘" />
@@ -72,7 +74,7 @@ export default function About({aboutOffsetTop}:aboutTop) {
               <img src={process.env.PUBLIC_URL+"/assets/icons/about/school.svg"} alt="학교 아이콘" />
               <dl>
                 <dt>학력</dt>
-                <dd>백석대학교 &#40;연극영화과&#41;</dd>
+                <dd>백석대학교 &#40;연기과&#41;</dd>
               </dl>
             </li>
           </ul>

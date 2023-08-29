@@ -73,13 +73,13 @@
         align-items: center;
         justify-content: center;
         gap: 0;
+        background-color: var(--color_ff);
     }
     .QuickList li{
         width: 100%;
-        background-color: var(--color_ff);
         text-align: center;
     }
-    .QuickList li a{
+    .QuickList li button{
         padding: 20px 0;
     }
     .navBtn{

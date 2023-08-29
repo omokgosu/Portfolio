@@ -9,17 +9,20 @@ type archivingTop = {
 export default function Archiving({archivingOffsetTop}:archivingTop) {
 
   const archivingRef = useRef<HTMLDivElement>(null);
-  useEffect(()=>{
-    const Load = ():void => {
-      if(archivingRef.current){
-        archivingOffsetTop(archivingRef.current.offsetTop);
-      }
+  const Load = ():void => {
+    if(archivingRef.current){
+      archivingOffsetTop(archivingRef.current.offsetTop);
     }
+  }
+  
+  useEffect(()=>{
 
     window.addEventListener('load', Load);
-
+    window.addEventListener('resize', Load);
+    
     return () => {
       window.removeEventListener('load', Load);
+      window.removeEventListener('resize', Load);
     }
   },[])
 
