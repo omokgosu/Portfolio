@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/Skill.css';
+import '../styles/Skill.scss';
 
 interface Skill {
   title: string;

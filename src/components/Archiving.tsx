@@ -1,6 +1,6 @@
 import React, {useEffect,useRef} from 'react';
 
-import '../styles/Archiving.css'
+import '../styles/Archiving.scss'
 
 type archivingTop = {
   archivingOffsetTop: (newOffsetTop:number) => void; 

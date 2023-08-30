@@ -1,0 +1,90 @@
+@use "./media.scss" as *;
+
+.About {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 6rem 0;
+	display: flex;
+	justify-content: space-between;
+	>img {
+		width: 35%;
+	}
+}
+.AboutInfo {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2em;
+	h4 {
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+}
+.Information {
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.75em;
+	}
+	li {
+		display: flex;
+		gap: 1em;
+		img {
+			width: 24px;
+		}
+		dt {
+			font-size: var(--font_size_medium);
+			font-weight: 700;
+		}
+		dd {
+			color: var(--color_66);
+			a {
+				color: var(--color_violet);
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+@include desktop{
+	.About {
+		width: 90%;
+		flex-direction: column;
+		align-items: center;
+		gap: 3em;
+		padding: 5rem 0;
+	}
+	.AboutInfo {
+		width: 100%;
+		gap: 4em;
+	}
+}
+@include tablet{
+	.About {
+		padding: 4rem 0;
+	}
+	.Information {
+		ul {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+@include mobile{
+	.About {
+		padding: 3rem 0;
+		>img {
+			width: 50%;
+		}
+	}
+	.Information {
+		h4 {
+			text-align: center;
+		}
+		ul {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 1.5em;
+		}
+	}
+}

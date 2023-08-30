@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import '../styles/Header.css'
+import '../styles/Header.scss'
 
 type scrollBtn = {
   scroll: (section:string) => void;

@@ -1,0 +1,77 @@
+@use "./media.scss" as *;
+
+.Archiving {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.ArchivingList {
+	display: flex;
+	gap: 20px;
+	>li {
+		position: relative;
+		top: 0;
+		flex: 1;
+		border: solid 2px #666;
+		border-radius: 10px;
+		text-align: center;
+		transition: all .3s;
+		&:hover {
+			top: -10px;
+		}
+		>a {
+			padding: 20px 10px;
+		}
+		h4 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+			margin-bottom: 20px;
+			img {
+				width: 25px;
+			}
+		}
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+        span {
+            position: relative;
+            padding-left: 30px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(8px);
+                width: 14px;
+                height: 10px;
+                background: url(../../public/assets/images/archiving/check.svg) no-repeat center/cover;
+            }
+        }
+	}
+}
+
+@include desktops{
+    .Archiving {
+		width: 95%;
+	}
+}
+@include tablet{
+    .Archiving {
+		width: 90%;
+	}
+	.ArchivingList {
+		flex-direction: column;
+	}
+}
+@include mobile{
+    .ArchivingList {
+        p {
+            span {
+                font-size: var(--font_size_small);
+            }
+        }
+	}
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/Main.css'
+import '../styles/Main.scss'
 
 export default function Main() {
   return (

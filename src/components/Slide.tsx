@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/Slide.css';
+import '../styles/Slide.scss';
 
 export default function Slide() {
 

@@ -1,7 +1,7 @@
 import React, {useEffect , useRef} from 'react';
 
 import Skill from './Skill';
-import '../styles/About.css'
+import '../styles/About.scss'
 
 type aboutTop = {
   aboutOffsetTop: (newOffsetTop:number) => void;

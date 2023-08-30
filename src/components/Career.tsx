@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 
-import '../styles/Career.css'
+import '../styles/Career.scss'
 
 type careerTop = {
   careerOffsetTop: (newOffsetTop:number) => void;

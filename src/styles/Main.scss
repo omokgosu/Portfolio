@@ -1,0 +1,80 @@
+@use "./media.scss" as *;
+
+.main {
+	max-width: 1400px;
+	margin: 0 auto;
+	position: relative;
+	height: calc(100vh - 80px);
+	margin-top: 80px;
+	padding-top: 6em;
+	text-align: center;
+	h3 {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		font-family: 'Fredericka the Great', cursive;
+		font-weight: 400;
+		font-size: var(--font_size_max);
+		border-bottom: solid 3px #666;
+		padding-bottom: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	p {
+		color: #444;
+		font-weight: 700;
+		font-size: var(--font_size_big);
+		margin-top: .8em;
+	}
+}
+.back {
+	position: absolute;
+	top: 3em;
+	bottom: 3em;
+	right: 0;
+	left: 0;
+	background: url(../../public/assets/images/main/main_back.png);
+	z-index: -1;
+}
+
+@include desktop{
+    .main {
+		width: 90%;
+		height: auto;
+		padding-bottom: 6em;
+	}
+}
+@include desktops{
+    .main {
+		padding-top: 5em;
+		padding-bottom: 5em;
+		p {
+			font-size: 1.5em;
+			margin-top: .6em;
+		}
+	}
+	.back {
+		top: 0;
+		bottom: 0;
+	}
+}
+@include tablet{
+    .main {
+		padding-top: 4em;
+		padding-bottom: 4em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		h3 {
+			font-size: var(--font_size_big);
+		}
+		p {
+			font-size: var(--font_size_normal);
+			margin-top: .6em;
+		}
+	}
+}
+@include mobile{
+    .main {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+}

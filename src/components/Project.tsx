@@ -1,5 +1,5 @@
 import React , {useEffect, useRef}from 'react';
-import '../styles/Project.css'
+import '../styles/Project.scss'
 
 type projectTop = {
   projectOffsetTop: (newoffsetTop:number) => void;
