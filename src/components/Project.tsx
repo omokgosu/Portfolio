@@ -33,7 +33,7 @@ export default function Project({projectOffsetTop}:projectTop) {
           <span>2023.08 &#40; 사이드 프로젝트 &#41;</span>
           <div className="ProjectItem">
             <div className="ProjectImg">
-              <img src={process.env.PUBLIC_URL+"/assets/images/project/SRC_1.png"} alt="SRC이미지" />
+              <img src={process.env.PUBLIC_URL+"/assets/images/project/src/SRC_1.png"} alt="SRC이미지" />
             </div>
             <div className="ProjectInfo">
               <ul className="ProjectText">
@@ -85,7 +85,7 @@ export default function Project({projectOffsetTop}:projectTop) {
           <span>2023.08 &#40; 개인 프로젝트 &#41;</span>
           <div className="ProjectItem">
             <div className="ProjectImg">
-              <img src={process.env.PUBLIC_URL+"/assets/images/project/SRC_1.png"} alt="SRC이미지" />
+              <img src={process.env.PUBLIC_URL+"/assets/images/project/profile/PROFILE_1.png"} alt="SRC이미지" />
             </div>
             <div className="ProjectInfo">
               <ul className="ProjectText">
@@ -119,7 +119,7 @@ export default function Project({projectOffsetTop}:projectTop) {
                 <li>
                   <dl>
                     <dt>Frontend</dt>
-                    <dd>React.js</dd>
+                    <dd>React.js , scss</dd>
                   </dl>
                 </li>
                 <li>
