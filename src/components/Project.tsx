@@ -50,7 +50,6 @@ export default function Project({projectOffsetTop}:projectTop) {
                   <p>UX UI에 대한 부분을 직접 고민하며 더 재미있는 웹 사이트를 만들고자 노력했고, 비록 성능문제로 프로젝트에 적용하진 못했지만 <span className="ProjectBold">three.js 를 경험</span>하며 3D 렌더링을 통한 더욱 흥미로운 웹 사이트가 곧 구현될 것이라는 생각이 들었습니다.</p>
                 </li>
               </ul>
-              <button type="button">자세히 보기</button>
               <ul className="ProjectSkill">
                 <li>
                   <dl>
@@ -96,7 +95,6 @@ export default function Project({projectOffsetTop}:projectTop) {
                   <p>간단한 함수들을 typeScript를 사용해보며 <span className="ProjectBold">코드에 타입을 명시하고 예측가능하게 만든다는것</span>이 어떤 것인지 이해하는 계기가 되었습니다.</p>
                 </li>
               </ul>
-              <button type="button">자세히 보기</button>
               <ul className="ProjectSkill">
                 <li>
                   <dl>
