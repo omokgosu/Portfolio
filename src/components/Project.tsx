@@ -62,6 +62,12 @@ export default function Project({projectOffsetTop}:projectTop) {
                 </li>
                 <li>
                   <dl>
+                    <dt>GitHub</dt>
+                    <dd><a href="https://github.com/omokgosu/NextHealth" target="_blank" rel="noreferrer">Food GPT.github</a></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
                     <dt>URL</dt>
                     <dd><a href="https://next-health-theta.vercel.app/" target="_blank" rel="noreferrer">Food GPT</a></dd>
                   </dl>
