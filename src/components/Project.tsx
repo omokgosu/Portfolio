@@ -28,6 +28,66 @@ export default function Project({projectOffsetTop}:projectTop) {
     <section ref={projectRef} className="Project">
       <h3>PROJECT</h3>
       <ul className="ProjectList">
+      <li>
+          <h4>헬스하고 뭐먹지..</h4>
+          <span>2023.09 &#40; 개인 프로젝트 &#41;</span>
+          <div className="ProjectItem">
+            <div className="ProjectImg">
+              <img src={process.env.PUBLIC_URL+"/assets/images/project/Food/Food.png"} alt="SRC이미지" />
+            </div>
+            <div className="ProjectInfo">
+              <ul className="ProjectText">
+                <li>
+                  <p><span className="ProjectTitle">영양성분과 이름에 따라 조리식품을 검색할 수 있는 웹사이트</span>입니다. 운동을 취미로 꾸준히 하게 되면서 맨날 아 오늘 뭐먹지.. 하고 고민했는데 여러가지 조리식품의 DB 가 있길래 만들어봤습니다.</p>
+                </li>
+                <li>
+                  <p>Next.js 를 사용해보며<span className="ProjectBold"> SSR과 SEO를 편리하게 사용할 수 있었지만</span> CSR과 SSR을 적재적소에 활용하며 컴포넌트를 재사용하는게 아직도 많이 어렵습니다.</p>
+                </li>
+                <li>
+                  <p>Recoil을 Project에 처음 사용해보고<span className="ProjectBold"> React스러운 문법으로 전역상태관리를 쉽게</span>할 수 있는 것이 굉장히 매력적이라고 느꼈습니다.</p>
+                </li>
+                <li>
+                  <p><span className="ProjectBold">Vercel로 Next.js를 배포해보면서</span> Next.js 를 굉장히 편하게 build 할 수 있구나.. 하고 느꼈습니다.</p>
+                </li>
+                <li>
+                  <p><span className="ProjectBold">Firebase 로 DB를 구축해보면서</span> 백엔드 서버를 쉽게 구축할 수 있다는데 저는 왜 어려운지 모르겠습니다.</p>
+                </li>
+              </ul>
+              <ul className="ProjectSkill">
+                <li>
+                  <dl>
+                    <dt>주요기능</dt>
+                    <dd>탄수화물, 단백질, 지방 g 수와 식품명에 대한 검색기능, 조리법</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>URL</dt>
+                    <dd><a href="https://next-health-theta.vercel.app/" target="_blank" rel="noreferrer">Food GPT</a></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>Frontend</dt>
+                    <dd>Next.js, Recoil</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>Backend</dt>
+                    <dd>firebase</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>Deployment</dt>
+                    <dd>vercel</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
         <li>
           <h4>Safe Road Club</h4>
           <span>2023.08 &#40; 사이드 프로젝트 &#41;</span>
