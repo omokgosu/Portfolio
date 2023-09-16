@@ -177,7 +177,7 @@ export default function Project({projectOffsetTop}:projectTop) {
                 <li>
                   <dl>
                     <dt>URL</dt>
-                    <dd><a href="https://github.com/omokgosu/Portfolio" target="_blank" rel="noreferrer">Portfolio.com</a></dd>
+                    <dd><a href="https://omokgosu.github.io/Portfolio/" target="_blank" rel="noreferrer">Portfolio.com</a></dd>
                   </dl>
                 </li>
                 <li>
