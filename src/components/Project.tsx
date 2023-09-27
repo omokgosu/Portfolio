@@ -125,7 +125,7 @@ export default function Project({projectOffsetTop}:projectTop) {
                 </li>
                 <li>
                   <dl>
-                      <dt>URL</dt>
+                      <dt>Github</dt>
                       <dd><a href="https://github.com/omokgosu/src-portfolio" target="_blank" rel="noreferrer">SafeRoadClub.github</a></dd>
                   </dl>
                 </li>
